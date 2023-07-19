@@ -16,7 +16,7 @@ const Sites = () => {
   return (
     <Box  py={'10'} textAlign={'center'}  lineHeight={'110%'}>
         <Text color={'#ed2c3e'} fontSize={'lg'} my={10}>
-      We are her to serve
+      We are here to serve
         </Text>
         <Heading my={4}>Services</Heading>
 <Text my={4}>Explore multiple options for maximum fun Use the power of mind.

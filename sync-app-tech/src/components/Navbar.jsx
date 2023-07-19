@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { React } from 'react';
 import {
   Box,
   Flex,
@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <>
       <Box  position={'fixed'}
-    w={'100%'}
+    w={'full'}
     zIndex={2} bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <Box>SyncAppTech</Box>

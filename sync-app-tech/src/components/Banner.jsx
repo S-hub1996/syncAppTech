@@ -84,12 +84,14 @@ export default function Banner() {
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((card, index) => (
           <Box
+        
             key={index}
+            my={20}
             height={"-moz-max-content"}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
-            backgroundSize="cover"
+            backgroundSize="auto"
             backgroundImage={`url(${card.image})`}
           >
             {/* This is the block you need to change, to customize the caption */}
@@ -99,14 +101,21 @@ export default function Banner() {
                 w={"full"}
                 maxW={"lg"}
                 position="absolute"
-                top={["30%","25%","30%","25%"]}
-                left={["0",'0',"0","-45%","-45%"]}
+                top={["30%","25%","10%","15%"]}
+                // left={["0",'0',"0","-45%","-45%"]}
                 transform="translate(0, -50%)"
+
+
+
+
+
+
+
               >
                 <Text
                   bgGradient="linear(to-r, blue.500, pink.500)"
                   bgClip="text"
-                  fontSize={{ base: "3xl", md: "4xl", lg: "6xl" }}
+                  fontSize={{ base: "3xl", md: "4xl", lg: "4xl" }}
                 >
                   {card.title}
                 </Text>
