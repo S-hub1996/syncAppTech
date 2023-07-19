@@ -101,16 +101,9 @@ export default function Banner() {
                 w={"full"}
                 maxW={"lg"}
                 position="absolute"
-                top={["30%","25%","10%","15%"]}
+                top={["10%","5%","10%","15%"]}
                 // left={["0",'0',"0","-45%","-45%"]}
                 transform="translate(0, -50%)"
-
-
-
-
-
-
-
               >
                 <Text
                   bgGradient="linear(to-r, blue.500, pink.500)"
