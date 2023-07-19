@@ -91,7 +91,7 @@ export default function Banner() {
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
-            backgroundSize={["contain","auto"]}
+            backgroundSize={["contain","contain","contain","auto"]}
             backgroundImage={`url(${card.image})`}
           >
             {/* This is the block you need to change, to customize the caption */}
