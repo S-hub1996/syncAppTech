@@ -14,7 +14,7 @@ const Sites = () => {
     const appImages2=["https://images.unsplash.com/photo-1602265585142-6b221b9b2c24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80","https://images.unsplash.com/photo-1602265585142-6b221b9b2c24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80","https://images.unsplash.com/photo-1602265585142-6b221b9b2c24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80","https://images.unsplash.com/photo-1602265585142-6b221b9b2c24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80","https://images.unsplash.com/photo-1602265585142-6b221b9b2c24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80","https://images.unsplash.com/photo-1602265585142-6b221b9b2c24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80"]
     // console.log(appImages)
   return (
-    <Box  py={'10'} textAlign={'center'}  lineHeight={'110%'}>
+    <Box  py={[0,'10']} textAlign={'center'}  lineHeight={'110%'}>
         <Text color={'#ed2c3e'} fontSize={'lg'} my={10}>
       We are here to serve
         </Text>

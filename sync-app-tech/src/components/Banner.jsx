@@ -86,29 +86,29 @@ export default function Banner() {
           <Box
         
             key={index}
-            my={20}
+            my={[10,20]}
             height={"-moz-max-content"}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
-            backgroundSize="auto"
+            backgroundSize={["contain","auto"]}
             backgroundImage={`url(${card.image})`}
           >
             {/* This is the block you need to change, to customize the caption */}
-            <Container size="container.lg" height={"750px"} position="relative">
+            <Container size="container.lg" height={["450px","750px"]} position="relative">
               <Stack
                 spacing={6}
                 w={"full"}
                 maxW={"lg"}
                 position="absolute"
-                top={["10%","5%","10%","15%"]}
+                top={["90%","5%","10%","10%"]}
                 // left={["0",'0',"0","-45%","-45%"]}
                 transform="translate(0, -50%)"
               >
                 <Text
                   bgGradient="linear(to-r, blue.500, pink.500)"
                   bgClip="text"
-                  fontSize={{ base: "3xl", md: "4xl", lg: "4xl" }}
+                  fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
                 >
                   {card.title}
                 </Text>
