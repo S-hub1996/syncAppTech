@@ -9,16 +9,16 @@ export const SlideCard = ({Props}) => {
         // <Link to={`/packages/${Props.title}`}>
       <VStack
         w="１００％"
-        h={['200px',"350px"]}
+        h={'-webkit-fit-content'}
         // bg="cyan.400"
         // border="cyan.700"
         alignContent="center"
         justifyContent="center"
         mx="4"
       >
-        <Image   my={2}  _hover={{transform:'scale(1.1)' }} src={Props} fit={"cover"} maxW={'360px'}/>
+        <Image   my={2} w={['360px']} h={['240px']} _hover={{transform:'scale(1.1)' }} src={Props.img} fit={'contain'}/>
         <Text color={'gray.400'} fontWeight="bold">
-          Web App Services
+        {Props.title}
         </Text>
       </VStack>
         // </Link>

@@ -14,7 +14,7 @@ const ImgSlider = ({pack}) => {
       infinite: true,
       speed: 900,
       slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToScroll: 1,
       initialSlide: 0,
       arrows: false,
       autoplay:true,

@@ -58,7 +58,7 @@ import {
       <Box p={4}>
         <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
           <Heading  py={5}
-            fontSize={48}
+            fontSize={[24,48]}
             fontFamily={'Work Sans'}
             fontWeight={'bold'}
             color={useColorModeValue('gray.700', 'gray.50')}>

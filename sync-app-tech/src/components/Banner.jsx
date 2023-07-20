@@ -16,6 +16,7 @@ import Slider from "react-slick";
 import banner1 from '../assets/images/home-hero-banner@2x.webp'
 import banner2 from '../assets/images/talent-solutions-banner@2x.webp'
 import banner3 from '../assets/images/web-app-dev-banner@2x.webp'
+import banner4 from '../assets/images/software-hub-banner@2x.webp'
 // Settings for the slider
 const settings = {
   dots: false,
@@ -23,8 +24,8 @@ const settings = {
   fade: true,
   infinite: true,
   autoplay: true,
-  speed: 500,
-  autoplaySpeed: 5000,
+  speed: 1500,
+  autoplaySpeed: 2500,
   slidesToShow: 1,
   slidesToScroll: 1,
 };
@@ -57,6 +58,12 @@ export default function Banner() {
       text: `"Transforming Dreams into Digital Reality: Your Web Development Experts"`,
       image:
         banner3,
+    },
+    {
+      title: "Sync App Technology",
+      text: `"Transforming Dreams into Digital Reality: Your Web Development Experts"`,
+      image:
+        banner4,
     },
   ];
 

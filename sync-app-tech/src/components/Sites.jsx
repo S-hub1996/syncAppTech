@@ -1,17 +1,18 @@
 import { Box, Button, Heading, IconButton, Text, useColorModeValue } from '@chakra-ui/react'
 import React from 'react'
 import ImgSlider from './Slider'
-import allpanel from "../assets/apps/allpanel.jpeg"
-import asia2 from "../assets/apps/asia2.jpeg"
-import esex from "../assets/apps/esex.jpeg"
-import goex from "../assets/apps/goex.jpeg"
-import radheex from "../assets/apps/radheex.jpeg"
-import taj from "../assets/apps/taj777.jpeg"
+import outSource from "../assets/images/intrinsically-agile@2x.webp"
+import seo from "../assets/images/bespoke-training@2x.webp"
+import customErp from "../assets/images/end-to-end-services@2x.webp"
+import webApp from "../assets/images/eminent-expertise@2x.webp"
+import mobApp from "../assets/images/great-engineering-illustration@2x.webp"
+import AIpower from "../assets/images/taking-selfie-img@2x.webp"
 import { ArrowForwardIcon, PhoneIcon } from '@chakra-ui/icons'
 
 const Sites = () => {
-    const appImages=[allpanel,asia2,esex,goex,radheex,taj]
-    const appImages2=["https://images.unsplash.com/photo-1602265585142-6b221b9b2c24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80","https://images.unsplash.com/photo-1602265585142-6b221b9b2c24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80","https://images.unsplash.com/photo-1602265585142-6b221b9b2c24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80","https://images.unsplash.com/photo-1602265585142-6b221b9b2c24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80","https://images.unsplash.com/photo-1602265585142-6b221b9b2c24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80","https://images.unsplash.com/photo-1602265585142-6b221b9b2c24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80"]
+    const appImages2=[outSource,seo,customErp,webApp,mobApp,AIpower]
+    const appImages=[{title:"OutSourcing",img:outSource},{title:"SEO",img:seo},{title:"Custom ERP",img:customErp},{title:"Web App Development",img:webApp},{img:mobApp,title:"Andriod and IOS"},{img:AIpower,title:"AI Power"}]
+
     // console.log(appImages)
   return (
     <Box  py={['10']} textAlign={'center'}  lineHeight={'110%'}>
@@ -34,7 +35,7 @@ const Sites = () => {
             color={useColorModeValue('gray.500', 'gray.400')}>Explore multiple options for maximum fun Use the power of mind.
 </Text>
 
-<ImgSlider pack={appImages2}/>
+<ImgSlider pack={appImages}/>
 
 <Button rightIcon={<ArrowForwardIcon />} color={'white'} bgGradient='linear(to-r, gray.300, gray.500)'
                 rounded={'full'}

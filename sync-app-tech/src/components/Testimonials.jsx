@@ -4,10 +4,11 @@ import {
     chakra,
     Flex,
     Icon,
+    Image,
     SimpleGrid,
     useColorModeValue,
   } from '@chakra-ui/react';
-  
+  import quality from '../assets/images/unmatched-quality@2x.webp'
   const testimonials = [
     {
       name: 'Shubham Verma.',
@@ -158,7 +159,7 @@ import {
             color={useColorModeValue('gray.500', 'gray.400')}>
             See why over{' '}
             <chakra.strong color={useColorModeValue('gray.700', 'gray.50')}>
-              150,000+
+              1,500+
             </chakra.strong>{' '}
             E-Leaders use SyncAppTech to manage their Web Presence and Content!
           </chakra.h2>
@@ -173,6 +174,7 @@ import {
             <TestimonialCard {...cardInfo} index={index} />
           ))}
         </SimpleGrid>
+        <Image m={'auto'} w={'420px'} src={quality}/>
         <Box>
           <Icon viewBox="0 0 40 35" mt={14} boxSize={10} color={'purple.400'}>
             <path

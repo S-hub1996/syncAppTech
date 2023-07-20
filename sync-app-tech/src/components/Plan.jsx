@@ -51,10 +51,9 @@ import {
               rounded={'md'}>
               Our Story
             </Text>
-            <Heading>A digital Product design agency</Heading>
+            <Heading>A digital Product design management</Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore
+            Access vetted experts in the tech stack of your choice.
             </Text>
             <Stack
               spacing={4}
