@@ -17,6 +17,8 @@ import banner1 from '../assets/images/home-hero-banner@2x.webp'
 import banner2 from '../assets/images/talent-solutions-banner@2x.webp'
 import banner3 from '../assets/images/web-app-dev-banner@2x.webp'
 import banner4 from '../assets/images/software-hub-banner@2x.webp'
+import { Link } from "react-scroll";
+import { ChevronUpIcon } from "@chakra-ui/icons";
 // Settings for the slider
 const settings = {
   dots: false,
@@ -69,6 +71,7 @@ export default function Banner() {
 
   return (
     <Box
+    name="test1"
     pt={16}
       position={"relative"}
       height={"100%"}
@@ -131,6 +134,26 @@ export default function Banner() {
           </Box>
         ))}
       </Slider>
+      <Link activeClass="active"
+            className="test1"
+            to="test1"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={50}>
+
+            <IconButton
+              m='auto'
+              zIndex={999}
+              position={'fixed'}
+              bottom={20}
+              right={12}
+              colorScheme='orange'
+              aria-label='Call Segun'
+              size='md'
+              icon={<ChevronUpIcon />}
+/>
+              </Link>
     </Box>
   );
 }

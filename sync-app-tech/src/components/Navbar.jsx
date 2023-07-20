@@ -7,20 +7,68 @@ import {
   Stack,
   useColorMode,
   Code,
+  useDisclosure,
+  HStack,
+  IconButton,
 
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import {Link} from 'react-scroll'
+import NavLink from './NavLink';
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
+const links = [
+  { name: "About", id: "test2" },
+  { name: "Home", id: "test1" },
+  { name: "Services", id: "test3" },
+  { name: "Contact", id: "test4" },
+];
 
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <>
       <Box  position={'fixed'}
     w={'full'}
     zIndex={2} bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+        <IconButton
+          size={"md"}
+          icon={isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
+          aria-label={"Open Menu"}
+          display={["inherit", "inherit", "none"]}
+          onClick={isOpen ? onClose : onOpen}
+        />
+
+        <HStack spacing={4} alignItems={"center"}>
+        <Link  activeClass="active"
+            className="test1"
+            to="test1"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={50}>
           <Code>SyncApp</Code>
+           </Link>
+         
+        
+
+          <HStack as={"nav"}  spacing={4} display={{ base: "none", md: "flex" }}>
+            {links.map((link, i) => (
+              <NavLink
+                key={i}
+                to={link.id}
+                name={link.name}
+                fontSize={15}
+                onClick={() => onClose()}
+              />
+            ))}
+          </HStack>
+        </HStack>
+        
 
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
@@ -30,6 +78,26 @@ export default function Navbar() {
             </Stack>
           </Flex>
         </Flex>
+        {isOpen ? (
+        <Box
+          pb={4}
+          w={["100%", "100%", "80%"]}
+          maxW={800}
+          display={["inherit", "inherit", "none"]}
+        >
+          <Stack as={"nav"} spacing={4} alignItems="center" w="">
+            {links.map((link, i) => (
+              <NavLink
+                key={i}
+                to={link.id}
+                name={link.name}
+                w="md"
+                onClick={() => onClose() }
+              />
+            ))}
+          </Stack>
+        </Box>
+      ) : null}
       </Box>
     </>
   );

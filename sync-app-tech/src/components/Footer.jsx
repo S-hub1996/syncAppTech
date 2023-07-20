@@ -3,7 +3,6 @@ import {
     chakra,
     Container,
     Heading,
-    Link,
     Stack,
     Text,
     useColorModeValue,
@@ -11,6 +10,7 @@ import {
   } from '@chakra-ui/react';
   import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
   import { ReactNode } from 'react';
+import { Link } from 'react-scroll';
   
 
   
@@ -55,10 +55,31 @@ import {
           align={'center'}>
           <Heading>SyncAppTech</Heading>
           <Stack direction={'row'} spacing={6}>
-            <Link href={'#'}>Home</Link>
-            <Link href={'#'}>About</Link>
-            <Link href={'#'}>Blog</Link>
-            <Link href={'#'}>Contact</Link>
+            <Link 
+            className="test1"
+            to="test1"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={50}>Home</Link>
+            <Link className="test1"
+            to="test2"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={50}>About</Link>
+            <Link className="test1"
+            to="test3"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={50}>Services</Link>
+            <Link className="test1"
+            to="test4"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={50}>Contact</Link>
           </Stack>
         </Container>
   

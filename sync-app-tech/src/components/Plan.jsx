@@ -37,7 +37,7 @@ import {
   
   export default function Plan() {
     return (
-      <Container maxW={'5xl'} py={12}>
+      <Container name='test2' maxW={'5xl'} py={12}>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
           <Stack spacing={4}>
             <Text
