@@ -14,7 +14,7 @@ function App() {
     <>
   <Navbar/>
   <Banner/>
-  <MarqueeSlider/>
+  {/* <MarqueeSlider/> */}
   <Sites/>
   <Plan/>
   <Testimonials/>
