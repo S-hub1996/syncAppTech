@@ -146,8 +146,8 @@ export default function Banner() {
               m='auto'
               zIndex={999}
               position={'fixed'}
-              bottom={20}
-              right={12}
+              bottom={[16,20]}
+              right={[10,12]}
               colorScheme='orange'
               aria-label='Call Segun'
               size='md'
