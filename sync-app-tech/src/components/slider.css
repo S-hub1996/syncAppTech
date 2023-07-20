@@ -4,7 +4,7 @@
   }
   
   .slick-arrow {
-    display: block;
+    display: none;
   }
   
   .slick-prev,
@@ -13,7 +13,7 @@
     line-height: 0;
     position: absolute;
     top: 42%;
-    display: block;
+    display: none;
     width: 20px;
     height: 20px;
     padding: 0;
@@ -33,7 +33,7 @@
   }
   .slick-prev:before,
   .slick-next:before {
-    color: rgba(0, 0, 0, 0);
+    color: rgba(161, 72, 72, 0);
   }
   /* .slick-slide {
   }

@@ -1,3 +1,4 @@
+import { Box } from "@chakra-ui/react";
 import Banner from "./components/Banner";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -10,7 +11,7 @@ import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
-    <div >
+    <>
   <Navbar/>
   <Banner/>
   <MarqueeSlider/>
@@ -20,7 +21,7 @@ function App() {
   <Support/>
   <Contact/>
   <Footer/>
-    </div>
+    </>
   );
 }
 

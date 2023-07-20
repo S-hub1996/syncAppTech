@@ -16,7 +16,7 @@ const ImgSlider = ({pack}) => {
       slidesToShow: 4,
       slidesToScroll: 4,
       initialSlide: 0,
-      arrows: true,
+      arrows: false,
       autoplay:true,
       responsive: [
         {
@@ -83,7 +83,7 @@ const ImgSlider = ({pack}) => {
       ],
     }
   return (
-    <Box my={8} >
+    <Box my={8} py={10}>
     
         <Slider {...settings}>
         {pack.length? pack?.map((Props)=>{

@@ -126,8 +126,9 @@ import {
   export default function Testimonials() {
     return (
       <Flex
+
         textAlign={'center'}
-        pt={10}
+        p={4}
         justifyContent={'center'}
         direction={'column'}
         width={'full'}
@@ -143,7 +144,7 @@ import {
           </chakra.h3>
           <chakra.h1
             py={5}
-            fontSize={48}
+            fontSize={[24,48]}
             fontFamily={'Work Sans'}
             fontWeight={'bold'}
             color={useColorModeValue('gray.700', 'gray.50')}>

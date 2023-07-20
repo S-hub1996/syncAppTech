@@ -57,7 +57,11 @@ import {
     return (
       <Box p={4}>
         <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-          <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
+          <Heading  py={5}
+            fontSize={48}
+            fontFamily={'Work Sans'}
+            fontWeight={'bold'}
+            color={useColorModeValue('gray.700', 'gray.50')}>
 Our 24/7 Support           </Heading>
           <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis

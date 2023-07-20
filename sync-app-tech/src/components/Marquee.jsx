@@ -7,9 +7,9 @@ export default function MarqueeSlider(){
 
 
 
- return <Box pt={2} height="50px" bg={useColorModeValue('gray.100', 'gray.900')} textAlign={'center'}>
+ return <Box pt={2} height="50px" bg={useColorModeValue('gray.900', 'gray.100')} textAlign={'center'}>
   <Marquee >
-    <Code fontSize={['lg','2xl']}>| Sync App Tech || Web App Development | Outsourcing | Custom ERP | Andriod and IOS App Development | Search Engine Optimization |</Code>
+    <Code  color={"gray.100"} bg={'gray.900'} fontSize={['lg','2xl']}>| Sync App Technology || Web App Development | Outsourcing | Custom ERP | Andriod and IOS App Development | Search Engine Optimization |</Code>
   </Marquee>
 </Box>
 
