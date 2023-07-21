@@ -46,23 +46,23 @@ export default function Banner() {
   // This can be static or loaded from a server
   const cards = [
     {
-      title: "Sync App Technology",
+      title: "Sync App Technologies",
       text: `"Transforming Dreams into Digital Reality: Your Web Development Experts"`,
       image:banner1,
     },
     {
-      title: "Sync App Technology",
+      title: "Sync App Technologies",
       text:` "Transforming Dreams into Digital Reality: Your Web Development Experts"`,
       image:banner2,
     },
     {
-      title: "Sync App Technology",
+      title: "Sync App Technologies",
       text: `"Transforming Dreams into Digital Reality: Your Web Development Experts"`,
       image:
         banner3,
     },
     {
-      title: "Sync App Technology",
+      title: "Sync App Technologies",
       text: `"Transforming Dreams into Digital Reality: Your Web Development Experts"`,
       image:
         banner4,

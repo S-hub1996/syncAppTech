@@ -8,12 +8,14 @@ import Plan from "./components/Plan";
 import Sites from "./components/Sites";
 import Support from "./components/Support";
 import Testimonials from "./components/Testimonials";
+import About from "./components/About";
 
 function App() {
   return (
     <>
   <Navbar/>
   <Banner/>
+  <About/>
   {/* <MarqueeSlider/> */}
   <Sites/>
   <Plan/>
