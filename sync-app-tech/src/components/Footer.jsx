@@ -3,15 +3,18 @@ import {
     chakra,
     Container,
     Heading,
+    Image,
     Stack,
     Text,
+    useColorMode,
     useColorModeValue,
     VisuallyHidden,
   } from '@chakra-ui/react';
   import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
   import { ReactNode } from 'react';
 import { Link } from 'react-scroll';
-  
+import dark from '../assets/images/dark.png'
+import light from '../assets/images/light.png'
 
   
   const SocialButton = ({
@@ -42,6 +45,7 @@ import { Link } from 'react-scroll';
   };
   
   export default function Footer() {
+    const { colorMode, toggleColorMode } = useColorMode();
     return (
       <Box
         bg={useColorModeValue('gray.50', 'gray.900')}
@@ -53,7 +57,9 @@ import { Link } from 'react-scroll';
           spacing={4}
           justify={'center'}
           align={'center'}>
-          <Heading>SyncAppTech</Heading>
+          {
+          colorMode==='light'?  <Image src={light} m={'auto'} w={72}/>:<Image src={dark} w={72}/>
+        }
           <Stack direction={'row'} spacing={6}>
             <Link 
             className="test1"
@@ -95,7 +101,7 @@ import { Link } from 'react-scroll';
             spacing={4}
             justify={{ base: 'center', md: 'space-between' }}
             align={{ base: 'center', md: 'center' }}>
-            <Text>© 2022 Sync App Tech. All rights reserved</Text>
+            <Text>© 2023 Sync App Tech. All rights reserved</Text>
             <Stack direction={'row'} spacing={6}>
               <SocialButton label={'Twitter'} href={'#'}>
                 <FaTwitter />

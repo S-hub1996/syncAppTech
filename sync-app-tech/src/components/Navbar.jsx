@@ -10,6 +10,7 @@ import {
   useDisclosure,
   HStack,
   IconButton,
+  Image,
 
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
@@ -17,6 +18,8 @@ import {Link} from 'react-scroll'
 import NavLink from './NavLink';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import dark from '../assets/images/dark.png'
+import light from '../assets/images/light.png'
 const links = [
   { name: "About", id: "test2" },
   { name: "Home", id: "test1" },
@@ -51,7 +54,10 @@ export default function Navbar() {
             smooth={true}
             duration={500}
             offset={50}>
-          <Code>SyncApp</Code>
+        {
+          colorMode==='light'?  <Image src={light} m={'auto'} w={48}/>:<Image src={dark} w={48}/>
+        }
+      
            </Link>
          
         
