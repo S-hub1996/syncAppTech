@@ -9,12 +9,14 @@ import {
     useColorModeValue,
     VisuallyHidden,
   } from '@chakra-ui/react';
-  import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+  import {  FaTwitter,FaLinkedin, FaYoutube } from 'react-icons/fa';
+  import {  SiGmail } from 'react-icons/si';
   import { React } from 'react';
 import { Link } from 'react-scroll';
 import dark from '../assets/images/dark.png'
 import light from '../assets/images/light.png'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { BsWhatsapp } from 'react-icons/bs';
   
   const SocialButton = ({
     children,
@@ -103,13 +105,19 @@ import light from '../assets/images/light.png'
             <Text>© {new Date().getFullYear()} SyncApp Tech. All rights reserved</Text>
             <Stack direction={'row'} spacing={6}>
               <SocialButton label={'Twitter'} href={'#'}>
-                <FaTwitter />
+                <FaTwitter color='#4da3f5'/>
               </SocialButton>
               <SocialButton label={'YouTube'} href={'#'}>
-                <FaYoutube />
+                <FaYoutube color='#e62828'/>
               </SocialButton>
-              <SocialButton label={'Instagram'} href={'#'}>
-                <FaInstagram />
+              <SocialButton label={'Gmail'} href={'#'}>
+                <SiGmail color='#df3030'/>
+              </SocialButton>
+              <SocialButton label={'Linkdin'} href={'#'}>
+                <FaLinkedin color='#1e6df6'/>
+              </SocialButton>
+              <SocialButton label={'WhatsApp'} href={'#'}>
+                <BsWhatsapp color='#32c365'/>
               </SocialButton>
             </Stack>
           </Container>
