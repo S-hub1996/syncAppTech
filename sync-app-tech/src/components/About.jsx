@@ -15,7 +15,7 @@ const About = () => {
                 fontSize={48}
                 fontFamily={'Work Sans'}
                 fontWeight={'bold'}
-                color={useColorModeValue('gray.700', 'gray.50')}>Sync App Technologies</Heading>
+                color={useColorModeValue('gray.700', 'gray.50')}>SyncApp Technologies</Heading>
             <Text margin={'auto'}
                 width={'70%'}
                 fontFamily={'Inter'}
@@ -24,7 +24,7 @@ const About = () => {
             </Text>
 
             <Text p={['10']} py={4} textAlign={'justify'} lineHeight={'6'} color={useColorModeValue('gray.600', 'gray.300')} fontSize={{ base: 'sm', sm: 'lg' }}>
-                At Sync App Technologies, we are a leading Delhi-based IT company that specializes in delivering cutting-edge technology solutions to businesses and organizations worldwide. With a passionate team of skilled professionals, we have earned a reputation for excellence in providing a comprehensive range of services tailored to meet our clients' diverse needs.
+                At SyncApp Technologies, we are a leading Delhi-based IT company that specializes in delivering cutting-edge technology solutions to businesses and organizations worldwide. With a passionate team of skilled professionals, we have earned a reputation for excellence in providing a comprehensive range of services tailored to meet our clients' diverse needs.
             </Text>
             <Text px={['10']} py={4} textAlign={'justify'} lineHeight={'6'} color={useColorModeValue('gray.600', 'gray.300')} fontSize={{ base: 'sm', sm: 'lg' }}>
                 <Heading as={'span'} fontSize={{ base: 'sm', sm: 'lg' }}>Web App Development: </Heading>
@@ -50,7 +50,7 @@ const About = () => {
                 fontSize={32}
                 fontFamily={'Work Sans'}
                 fontWeight={'bold'}
-                color={useColorModeValue('gray.700', 'gray.50')} > Why Choose Sync App Technologies?</Heading>
+                color={useColorModeValue('gray.700', 'gray.50')} > Why Choose SyncApp Technologies?</Heading>
 
             <OrderedList px={['10']} textAlign={'justify'} color={useColorModeValue('gray.600', 'gray.300')}>
                 <ListItem py={4}>
@@ -75,7 +75,7 @@ const About = () => {
                 </ListItem>
             </OrderedList>
             <Text px={['10']} py={4} textAlign={'justify'} lineHeight={'6'} color={useColorModeValue('gray.600', 'gray.300')} fontSize={{ base: 'sm', sm: 'lg' }}>
-                At Sync App Technologies, we aim to be your one-stop destination for all your IT needs. Our holistic approach to web app development, mobile app development, SEO, ERP solutions, outsourcing services, and AI integration sets us apart as a reliable and trusted partner. Join hands with us, and together, we'll embark on a journey towards digital success. Contact us today to turn your visions into reality!
+                At SyncApp Technologies, we aim to be your one-stop destination for all your IT needs. Our holistic approach to web app development, mobile app development, SEO, ERP solutions, outsourcing services, and AI integration sets us apart as a reliable and trusted partner. Join hands with us, and together, we'll embark on a journey towards digital success. Contact us today to turn your visions into reality!
             </Text>
 
         </Container>
