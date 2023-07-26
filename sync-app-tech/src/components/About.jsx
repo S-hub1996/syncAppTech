@@ -1,4 +1,4 @@
-import { Box, Container, Heading, ListItem, OrderedList, Text, useColorModeValue } from '@chakra-ui/react'
+import {  Container, Heading, ListItem, OrderedList, Text, useColorModeValue } from '@chakra-ui/react'
 import React from 'react'
 
 const About = () => {

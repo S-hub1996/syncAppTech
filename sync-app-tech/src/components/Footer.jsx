@@ -2,7 +2,6 @@ import {
     Box,
     chakra,
     Container,
-    Heading,
     Image,
     Stack,
     Text,
@@ -11,7 +10,7 @@ import {
     VisuallyHidden,
   } from '@chakra-ui/react';
   import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
-  import { ReactNode } from 'react';
+  import { React } from 'react';
 import { Link } from 'react-scroll';
 import dark from '../assets/images/dark.png'
 import light from '../assets/images/light.png'
@@ -101,7 +100,7 @@ import light from '../assets/images/light.png'
             spacing={4}
             justify={{ base: 'center', md: 'space-between' }}
             align={{ base: 'center', md: 'center' }}>
-            <Text>© 2023 SyncApp Tech. All rights reserved</Text>
+            <Text>© {new Date().getFullYear()} SyncApp Tech. All rights reserved</Text>
             <Stack direction={'row'} spacing={6}>
               <SocialButton label={'Twitter'} href={'#'}>
                 <FaTwitter />

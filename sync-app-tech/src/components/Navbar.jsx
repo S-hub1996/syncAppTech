@@ -6,7 +6,6 @@ import {
   useColorModeValue,
   Stack,
   useColorMode,
-  Code,
   useDisclosure,
   HStack,
   IconButton,

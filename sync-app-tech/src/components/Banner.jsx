@@ -4,13 +4,12 @@ import {
   IconButton,
   useBreakpointValue,
   Stack,
-  Heading,
   Text,
   Container,
   Code,
 } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
-import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
+// import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 // And react-slick as our Carousel Lib
 import Slider from "react-slick";
 import banner1 from '../assets/images/home-hero-banner@2x.webp'
