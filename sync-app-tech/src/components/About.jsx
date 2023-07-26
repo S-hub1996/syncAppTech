@@ -35,16 +35,16 @@ const About = () => {
                 Embrace the mobile revolution with our top-notch Android and iOS mobile app development expertise. Our talented developers work diligently to create captivating, high-performance mobile applications that not only captivate your audience but also drive business growth and engagement.
             </Text>
             <Text px={['10']} py={4} textAlign={'justify'} lineHeight={'6'} color={useColorModeValue('gray.600', 'gray.300')} fontSize={{ base: 'sm', sm: 'lg' }}>
-                <Heading as={'span'} fontSize={{ base: 'sm', sm: 'lg' }}>Search Engine Optimization (SEO): </Heading>
-                With the ever-evolving digital landscape, visibility is crucial. Our SEO experts employ industry-leading strategies to optimize your online presence, boost organic traffic, and improve your website's ranking on search engine results pages. Enhance your online visibility and attract targeted audiences with our SEO prowess.
-            </Text>
-            <Text px={['10']} py={4} textAlign={'justify'} lineHeight={'6'} color={useColorModeValue('gray.600', 'gray.300')} fontSize={{ base: 'sm', sm: 'lg' }}>
                 <Heading as={'span'} fontSize={{ base: 'sm', sm: 'lg' }}>Outsourcing Services: </Heading>
                 Focus on your core business while we handle the rest. Our outsourcing services allow you to leverage our expertise in various domains, be it IT support, customer service, back-office operations, or any other business process outsourcing needs. Trust us to deliver exceptional results, so you can direct your attention to strategic growth initiatives.
             </Text>
             <Text px={['10']} py={4} textAlign={'justify'} lineHeight={'6'} color={useColorModeValue('gray.600', 'gray.300')} fontSize={{ base: 'sm', sm: 'lg' }}>
                 <Heading as={'span'} fontSize={{ base: 'sm', sm: 'lg' }}>AI Integration: </Heading>
                 Stay ahead of the competition with our AI integration services. Harness the power of artificial intelligence to automate tasks, analyze data, and make informed decisions. Our AI solutions are geared towards enhancing productivity, reducing costs, and offering personalized experiences to your customers.
+            </Text>
+            <Text px={['10']} py={4} textAlign={'justify'} lineHeight={'6'} color={useColorModeValue('gray.600', 'gray.300')} fontSize={{ base: 'sm', sm: 'lg' }}>
+                <Heading as={'span'} fontSize={{ base: 'sm', sm: 'lg' }}>Search Engine Optimization (SEO): </Heading>
+                With the ever-evolving digital landscape, visibility is crucial. Our SEO experts employ industry-leading strategies to optimize your online presence, boost organic traffic, and improve your website's ranking on search engine results pages. Enhance your online visibility and attract targeted audiences with our SEO prowess.
             </Text>
             <Heading py={5}
                 fontSize={32}
