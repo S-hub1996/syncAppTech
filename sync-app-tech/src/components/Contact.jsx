@@ -15,11 +15,14 @@ import {
     Tooltip,
     useClipboard,
     useColorModeValue,
+    useToast,
     VStack,
   } from '@chakra-ui/react';
-  import React from 'react';
-  import { BsGithub, BsLinkedin, BsPerson, BsTwitter, BsWhatsapp } from 'react-icons/bs';
-  import { MdEmail, MdOutlineEmail } from 'react-icons/md';
+  import emailjs from "@emailjs/browser";
+
+  import React, { useRef } from 'react';
+  import {  BsLinkedin, BsPerson, BsTwitter, BsWhatsapp } from 'react-icons/bs';
+  import {  MdOutlineEmail } from 'react-icons/md';
 import { SiGmail } from 'react-icons/si';
   
   const confetti = {
@@ -40,7 +43,29 @@ import { SiGmail } from 'react-icons/si';
   export default function Contact() {
     const { hasCopiedM, onCopyM } = useClipboard('example@example.com');
     const { hasCopiedW, onCopyW } = useClipboard('example@example.com');
+    const form = useRef();
+    const toast = useToast()
+    const sendEmail = (e) => {
+      e.preventDefault();
   
+      emailjs
+        .sendForm(
+          "servide id",
+          "template_id",
+          e.target,
+          "public key"
+        )
+        .then(
+          (response) => {
+            console.log("SUCCESS!", response.status, response.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      e.target.reset();
+    };
+
     return (
       <Flex
       name="test4"
@@ -140,7 +165,7 @@ import { SiGmail } from 'react-icons/si';
                     />
                   </Link>
                 </Stack>
-  
+  <form ref={form} onSubmit={sendEmail}>
                 <Box
                   bg={useColorModeValue('white', 'gray.700')}
                   borderRadius="lg"
@@ -185,14 +210,25 @@ import { SiGmail } from 'react-icons/si';
                       colorScheme="blue"
                       bg="blue.400"
                       color="white"
+                      type="submit"
                       _hover={{
                         bg: 'blue.500',
                       }}
+                      onClick={() =>
+                        toast({
+                          title: 'Direct Message',
+                          description: "Message Send Successfully!",
+                          status: 'success',
+                          duration: 3000,
+                          isClosable: true,
+                        })
+                      }
                       isFullWidth>
                       Send Message
                     </Button>
                   </VStack>
                 </Box>
+                </form>
               </Stack>
             </VStack>
           </Box>
