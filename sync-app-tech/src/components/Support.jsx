@@ -72,42 +72,42 @@ Our 24/7 Support           </Heading>
         <Container maxW={'5xl'} mt={12}>
           <Flex flexWrap="wrap" gridGap={6} justify="center">
             <Card
-              heading={'Heading'}
+              heading={'24 X 7 Customer Support'}
               icon={<Icon as={FcAssistant} w={10} h={10} />}
               description={
-                'Lorem ipsum dolor sit amet catetur, adipisicing elit.'
+                'We belive in customer satisfaction and hence we deliver the quality services.'
               }
               href={'#'}
             />
             <Card
-              heading={'Heading'}
+              heading={'Experienced team'}
               icon={<Icon as={FcCollaboration} w={10} h={10} />}
               description={
-                'Lorem ipsum dolor sit amet catetur, adipisicing elit.'
+                'We have strong and expended team of developers .'
               }
               href={'#'}
             />
             <Card
-              heading={'Heading'}
+              heading={'All Sizes Business'}
               icon={<Icon as={FcDonate} w={10} h={10} />}
               description={
-                'Lorem ipsum dolor sit amet catetur, adipisicing elit.'
+                'We do websites & mobile apps for all sizes of business.'
               }
               href={'#'}
             />
             <Card
-              heading={'Heading'}
+              heading={'On-time Delivery'}
               icon={<Icon as={FcManager} w={10} h={10} />}
               description={
-                'Lorem ipsum dolor sit amet catetur, adipisicing elit.'
+                'We always enthusiastic in delivering every project on-time.'
               }
               href={'#'}
             />
             <Card
-              heading={'Heading'}
+              heading={'Awesome Results'}
               icon={<Icon as={FcAbout} w={10} h={10} />}
               description={
-                'Lorem ipsum dolor sit amet catetur, adipisicing elit.'
+                'Our Digital Marketing Services will give the awesome results'
               }
               href={'#'}
             />
