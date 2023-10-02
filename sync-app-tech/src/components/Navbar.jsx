@@ -20,8 +20,8 @@ import { AiOutlineClose } from "react-icons/ai";
 import dark from '../assets/images/dark.png'
 import light from '../assets/images/light.png'
 const links = [
-  { name: "About", id: "test2" },
   { name: "Home", id: "test1" },
+  { name: "About", id: "test2" },
   { name: "Services", id: "test3" },
   { name: "Contact", id: "test4" },
 ];
