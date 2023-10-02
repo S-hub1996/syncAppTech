@@ -37,13 +37,7 @@ export default function Navbar() {
     w={'full'}
     zIndex={2} bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-        <IconButton
-          size={"md"}
-          icon={isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
-          aria-label={"Open Menu"}
-          display={["inherit", "inherit", "none"]}
-          onClick={isOpen ? onClose : onOpen}
-        />
+      
 
         <HStack spacing={4} alignItems={"center"}>
         <Link  activeClass="active"
@@ -60,7 +54,7 @@ export default function Navbar() {
            </Link>
          
         
-
+  </HStack>
           <HStack as={"nav"}  spacing={4} display={{ base: "none", md: "flex" }}>
             {links.map((link, i) => (
               <NavLink
@@ -72,16 +66,22 @@ export default function Navbar() {
               />
             ))}
           </HStack>
-        </HStack>
+      
         
-
-          <Flex alignItems={'center'}>
+          <IconButton
+          size={"md"}
+          icon={isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
+          aria-label={"Open Menu"}
+          display={["inherit", "inherit", "none"]}
+          onClick={isOpen ? onClose : onOpen}
+        />
+          {/* <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
               <Button onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
               </Button>
             </Stack>
-          </Flex>
+          </Flex> */}
         </Flex>
         {isOpen ? (
         <Box

@@ -64,8 +64,7 @@ import {
             color={useColorModeValue('gray.700', 'gray.50')}>
 Our 24/7 Support           </Heading>
           <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            obcaecati ut cupiditate pariatur, dignissimos, placeat amet officiis.
+          We understand that your business operates around the clock, and so does our support. Count on us 24/7.
           </Text>
         </Stack>
   

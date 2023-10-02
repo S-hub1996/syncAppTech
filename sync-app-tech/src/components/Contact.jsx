@@ -165,6 +165,8 @@ import { SiGmail } from 'react-icons/si';
                     />
                   </Link>
                 </Stack>
+
+                {/* Contact Form  */}
   <form ref={form} onSubmit={sendEmail}>
                 <Box
                   bg={useColorModeValue('white', 'gray.700')}
