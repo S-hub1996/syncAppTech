@@ -28,7 +28,7 @@ const links = [
 
 
 export default function Navbar() {
-  const { colorMode, toggleColorMode } = useColorMode('light');
+  const { colorMode } = useColorMode('light');
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
