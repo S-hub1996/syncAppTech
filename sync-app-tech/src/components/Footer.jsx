@@ -16,7 +16,7 @@ import { Link } from 'react-scroll';
 import dark from '../assets/images/dark.png'
 import light from '../assets/images/light.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { BsWhatsapp } from 'react-icons/bs';
+import { BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs';
   
   const SocialButton = ({
     children,
@@ -104,11 +104,11 @@ import { BsWhatsapp } from 'react-icons/bs';
             align={{ base: 'center', md: 'center' }}>
             <Text>© {new Date().getFullYear()} SyncApp Tech. All rights reserved</Text>
             <Stack direction={'row'} spacing={6}>
-              <SocialButton label={'Twitter'} href={'#'}>
-                <FaTwitter color='#4da3f5'/>
+              <SocialButton label={'Facebook'} href={'#'}>
+                <BsFacebook color='#4da3f5'/>
               </SocialButton>
-              <SocialButton label={'YouTube'} href={'#'}>
-                <FaYoutube color='#e62828'/>
+              <SocialButton label={'Instagram'} href={'#'}>
+                <BsInstagram color='#FF0080'/>
               </SocialButton>
               <SocialButton label={'Gmail'} href={'#'}>
                 <SiGmail color='#df3030'/>

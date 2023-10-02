@@ -21,7 +21,7 @@ import {
   import emailjs from "@emailjs/browser";
 
   import React, { useRef } from 'react';
-  import {  BsLinkedin, BsPerson, BsTwitter, BsWhatsapp } from 'react-icons/bs';
+  import {  BsLinkedin, BsPerson, BsInstagram, BsWhatsapp,BsFacebook } from 'react-icons/bs';
   import {  MdOutlineEmail } from 'react-icons/md';
 import { SiGmail } from 'react-icons/si';
   
@@ -136,15 +136,30 @@ import { SiGmail } from 'react-icons/si';
                       isRound
                     />
                 </Tooltip>
+                
   
                   <Link href="#">
                     <IconButton
-                      aria-label="twitter"
+                      aria-label="facebook"
                       variant="ghost"
                       size="lg"
-                      icon={<BsTwitter size="28px" color='#4da3f5'/>}
+                      icon={<BsFacebook size="28px" color='#4da3f5'/>}
                       _hover={{
-                        bg: 'blue.100',
+                        // bg: 'blue.200',
+                        color: useColorModeValue('white', 'gray.700'),
+                      }}
+                      isRound
+                    />
+                  </Link>
+                  <Link href="#">
+                    <IconButton
+                      aria-label="instagram"
+                      variant="ghost"
+                      size="lg"
+                      icon={<BsInstagram size="28px" color='#FF0080'
+                    />}
+                      _hover={{
+                        bg: 'pink.200',
                         color: useColorModeValue('white', 'gray.700'),
                       }}
                       isRound
