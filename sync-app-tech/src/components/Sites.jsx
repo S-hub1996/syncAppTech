@@ -11,7 +11,7 @@ import { ArrowForwardIcon } from '@chakra-ui/icons'
 
 const Sites = () => {
 
-  const appImages = [{ title: "OutSourcing", img: outSource }, { title: "SEO", img: seo }, { title: "Custom ERP", img: customErp }, { title: "Web App Development", img: webApp }, { img: mobApp, title: "Andriod and IOS" }, { img: AIpower, title: "AI Power" }]
+  const appImages = [{ title: "Web App Development", img: webApp }, { img: mobApp, title: "Andriod and IOS" }, { img: AIpower, title: "AI Power" }, { title: "Custom ERP", img: customErp }, { title: "OutSourcing", img: outSource }, { title: "SEO", img: seo }]
 
   return (
     <Box name='test3' py={['10']} textAlign={'center'} lineHeight={'110%'}>
