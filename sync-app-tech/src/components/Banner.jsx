@@ -69,6 +69,7 @@ export default function Banner() {
 
   return (
     <Box
+    bg={'gray.50'}
     name="test1"
     pt={16}
       position={"relative"}

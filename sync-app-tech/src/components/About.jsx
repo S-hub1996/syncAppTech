@@ -3,7 +3,8 @@ import React from 'react'
 
 const About = () => {
     return (
-        <Container py={10} name='test2' maxWidth={'container.xl'} textAlign={'center'} lineHeight={'110%'}>
+        <Container
+        bg={'gray.50'} py={10} name='test2' maxWidth={'container.xl'} textAlign={'center'} lineHeight={'110%'}>
             <Text fontFamily={'Work Sans'}
                 fontWeight={'bold'}
                 fontSize={20}

@@ -14,7 +14,7 @@ const Sites = () => {
   const appImages = [{ title: "Web App Development", img: webApp }, { img: mobApp, title: "Andriod and IOS" }, { img: AIpower, title: "AI Power" }, { title: "Custom ERP", img: customErp }, { title: "OutSourcing", img: outSource }, { title: "SEO", img: seo }]
 
   return (
-    <Box name='test3' py={['10']} textAlign={'center'} lineHeight={'110%'}>
+    <Box name='test3'   bg={'gray.50'} py={['10']} textAlign={'center'} lineHeight={'110%'}>
       <Text fontFamily={'Work Sans'}
         fontWeight={'bold'}
         fontSize={20}

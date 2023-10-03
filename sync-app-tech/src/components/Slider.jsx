@@ -83,7 +83,7 @@ const ImgSlider = ({pack}) => {
       ],
     }
   return (
-    <Box my={8} py={10}>
+    <Box my={8} py={10}   bg={'gray.50'}>
     
         <Slider {...settings}>
         {pack.length? pack?.map((Props)=>{

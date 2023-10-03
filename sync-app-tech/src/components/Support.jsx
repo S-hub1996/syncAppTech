@@ -22,6 +22,7 @@ import {
   const Card = ({ heading, description, icon, href }) => {
     return (
       <Box
+      bg={'gray.50'}
         maxW={{ base: 'full', md: '275px' }}
         w={'full'}
         borderWidth="1px"
