@@ -2,7 +2,7 @@ import { React } from 'react';
 import {
   Box,
   Flex,
-  Button,
+  // Button,
   // useColorModeValue,
   Stack,
   // useColorMode,
@@ -12,12 +12,12 @@ import {
   Image,
 
 } from '@chakra-ui/react';
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+// import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import {Link} from 'react-scroll'
 import NavLink from './NavLink';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import dark from '../assets/images/dark.png'
+// import dark from '../assets/images/dark.png'
 import light from '../assets/images/light.png'
 const links = [
   { name: "Home", id: "test1" },

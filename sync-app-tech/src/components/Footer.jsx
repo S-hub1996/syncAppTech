@@ -9,13 +9,13 @@ import {
     // useColorModeValue,
     VisuallyHidden,
   } from '@chakra-ui/react';
-  import {  FaTwitter,FaLinkedin, FaYoutube } from 'react-icons/fa';
+  import {  FaLinkedin } from 'react-icons/fa';
   import {  SiGmail } from 'react-icons/si';
   import { React } from 'react';
 import { Link } from 'react-scroll';
-import dark from '../assets/images/dark.png'
+// import dark from '../assets/images/dark.png'
 import light from '../assets/images/light.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs';
   
   const SocialButton = ({
