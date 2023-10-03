@@ -5,8 +5,8 @@ import {
     Image,
     Stack,
     Text,
-    useColorMode,
-    useColorModeValue,
+    // useColorMode,
+    // useColorModeValue,
     VisuallyHidden,
   } from '@chakra-ui/react';
   import {  FaTwitter,FaLinkedin, FaYoutube } from 'react-icons/fa';
@@ -25,7 +25,7 @@ import { BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs';
   }) => {
     return (
       <chakra.button
-        bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+        bg={'blackAlpha.100'}
         rounded={'full'}
         w={8}
         h={8}
@@ -37,7 +37,7 @@ import { BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs';
         justifyContent={'center'}
         transition={'background 0.3s ease'}
         _hover={{
-          bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+          bg: 'blackAlpha.200',
         }}>
         <VisuallyHidden>{label}</VisuallyHidden>
         {children}
@@ -46,11 +46,11 @@ import { BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs';
   };
   
   export default function Footer() {
-    const { colorMode, toggleColorMode } = useColorMode();
+    // const { colorMode, toggleColorMode } = useColorMode();
     return (
       <Box
-        bg={useColorModeValue('gray.50', 'gray.900')}
-        color={useColorModeValue('gray.700', 'gray.200')}>
+        bg={'gray.50'}
+        color={'gray.700'}>
         <Container
           as={Stack}
           maxW={'6xl'}
@@ -59,7 +59,7 @@ import { BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs';
           justify={'center'}
           align={'center'}>
           {
-          colorMode==='light'?  <Image src={light} m={'auto'} w={72}/>:<Image src={dark} w={72}/>
+            <Image src={light} m={'auto'} w={72}/>
         }
           <Stack direction={'row'} spacing={6}>
             <Link 
@@ -93,7 +93,7 @@ import { BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs';
         <Box
           borderTopWidth={1}
           borderStyle={'solid'}
-          borderColor={useColorModeValue('gray.200', 'gray.700')}>
+          borderColor={'gray.200'}>
           <Container
             as={Stack}
             maxW={'6xl'}

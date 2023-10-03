@@ -3,9 +3,9 @@ import {
   Box,
   Flex,
   Button,
-  useColorModeValue,
+  // useColorModeValue,
   Stack,
-  useColorMode,
+  // useColorMode,
   useDisclosure,
   HStack,
   IconButton,
@@ -29,14 +29,14 @@ const links = [
 
 export default function Navbar() {
   // const { colorMode, toggleColorMode } = useColorMode('light');
-  const { colorMode } = useColorMode('light');
+  // const { colorMode } = useColorMode('light');
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
       <Box  position={'fixed'}
     w={'full'}
-    zIndex={2} bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+    zIndex={2} bg={'gray.100'} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
       
 

@@ -14,7 +14,7 @@ import {
     Textarea,
     Tooltip,
     useClipboard,
-    useColorModeValue,
+    // useColorModeValue,
     useToast,
     VStack,
   } from '@chakra-ui/react';
@@ -69,11 +69,11 @@ import { SiGmail } from 'react-icons/si';
     return (
       <Flex
       name="test4"
-        bg={useColorModeValue('gray.100', 'gray.900')}
+        bg={'gray.100'}
         align="center"
         justify="center"
         css={{
-          backgroundImage: useColorModeValue(CONFETTI_LIGHT, CONFETTI_DARK),
+          backgroundImage:(CONFETTI_LIGHT),
           backgroundAttachment: 'fixed',
         }}
         id="contact">
@@ -111,7 +111,7 @@ import { SiGmail } from 'react-icons/si';
                       
                       _hover={{
                         bg: 'blue.100',
-                        color: useColorModeValue('white', 'gray.700'),
+                        color: 'white',
                       }}
                       onClick={onCopyM}
                       isRound
@@ -130,7 +130,7 @@ import { SiGmail } from 'react-icons/si';
                       icon={<BsWhatsapp color='#32c365'/>}
                       _hover={{
                         bg: 'blue.100',
-                        color: useColorModeValue('white', 'gray.700'),
+                        color: 'white',
                       }}
                       onClick={onCopyW}
                       isRound
@@ -146,7 +146,7 @@ import { SiGmail } from 'react-icons/si';
                       icon={<BsFacebook size="28px" color='#4da3f5'/>}
                       _hover={{
                         // bg: 'blue.200',
-                        color: useColorModeValue('white', 'gray.700'),
+                        color:'white',
                       }}
                       isRound
                     />
@@ -160,7 +160,7 @@ import { SiGmail } from 'react-icons/si';
                     />}
                       _hover={{
                         bg: 'pink.200',
-                        color: useColorModeValue('white', 'gray.700'),
+                        color: 'white',
                       }}
                       isRound
                     />
@@ -174,7 +174,7 @@ import { SiGmail } from 'react-icons/si';
                       icon={<BsLinkedin color='#1e6df6' size="28px" />}
                       _hover={{
                         bg: 'blue.100',
-                        color: useColorModeValue('white', 'gray.700'),
+                        color:'white',
                       }}
                       isRound
                     />
@@ -184,10 +184,10 @@ import { SiGmail } from 'react-icons/si';
                 {/* Contact Form  */}
   <form ref={form} onSubmit={sendEmail}>
                 <Box
-                  bg={useColorModeValue('white', 'gray.700')}
+                  bg={'white'}
                   borderRadius="lg"
                   p={8}
-                  color={useColorModeValue('gray.700', 'whiteAlpha.900')}
+                  color={'gray.700'}
                   shadow="base">
                   <VStack spacing={5}>
                     <FormControl isRequired>

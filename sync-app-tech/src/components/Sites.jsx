@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, Button, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
 import ImgSlider from './Slider'
 import outSource from "../assets/images/intrinsically-agile@2x.webp"
@@ -26,12 +26,12 @@ const Sites = () => {
         fontSize={48}
         fontFamily={'Work Sans'}
         fontWeight={'bold'}
-        color={useColorModeValue('gray.700', 'gray.50')}>Services</Heading>
+        color={'gray.700'}>Services</Heading>
       <Text margin={'auto'}
         width={'70%'}
         fontFamily={'Inter'}
         fontWeight={'medium'}
-        color={useColorModeValue('gray.500', 'gray.400')}>Explore multiple options for maximum fun Use the power of mind.
+        color={'gray.500'}>Explore multiple options for maximum fun Use the power of mind.
       </Text>
 
       <ImgSlider pack={appImages} />

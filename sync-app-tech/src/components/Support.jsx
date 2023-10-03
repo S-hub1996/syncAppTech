@@ -7,7 +7,7 @@ import {
     Icon,
     Stack,
     Text,
-    useColorModeValue,
+    // useColorModeValue,
   } from '@chakra-ui/react';
   import { React } from 'react';
   import {
@@ -36,7 +36,7 @@ import {
             justify={'center'}
             color={'white'}
             rounded={'full'}
-            bg={useColorModeValue('gray.100', 'gray.700')}>
+            bg={'gray.100'}>
             {icon}
           </Flex>
           <Box mt={2}>
@@ -61,7 +61,7 @@ import {
             fontSize={[24,48]}
             fontFamily={'Work Sans'}
             fontWeight={'bold'}
-            color={useColorModeValue('gray.700', 'gray.50')}>
+            color={'gray.700'}>
 Our 24/7 Support           </Heading>
           <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
           We understand that your business operates around the clock, and so does our support. Count on us 24/7.
