@@ -28,6 +28,7 @@ const links = [
 
 
 export default function Navbar() {
+  // const { colorMode, toggleColorMode } = useColorMode('light');
   const { colorMode } = useColorMode('light');
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -48,7 +49,8 @@ export default function Navbar() {
             duration={500}
             offset={50}>
         {
-          colorMode==='light'?  <Image src={light} m={'auto'} w={48}/>:<Image src={dark} w={48}/>
+          // colorMode==='light'?  <Image src={light} m={'auto'} w={48}/>:<Image src={dark} w={48}/>
+          <Image src={light} m={'auto'} w={48}/>
         }
       
            </Link>
