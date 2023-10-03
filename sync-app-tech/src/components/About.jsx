@@ -4,7 +4,7 @@ import React from 'react'
 const About = () => {
     return (
         <Container
-        bg={'gray.50'} py={10} name='test2' maxWidth={'container.xl'} textAlign={'center'} lineHeight={'110%'}>
+        bg={'white'} py={10} name='test2' maxWidth={'container.xl'} textAlign={'center'} lineHeight={'110%'}>
             <Text fontFamily={'Work Sans'}
                 fontWeight={'bold'}
                 fontSize={20}

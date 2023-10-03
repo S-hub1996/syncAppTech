@@ -6,7 +6,7 @@ import {
     Icon,
     Image,
     SimpleGrid,
-    useColorModeValue,
+    // useColorModeValue,
   } from '@chakra-ui/react';
   import quality from '../assets/images/unmatched-quality@2x.webp'
   const testimonials = [
@@ -65,7 +65,7 @@ import {
         p={10}
         justifyContent={'space-between'}
         position={'relative'}
-        bg={useColorModeValue('white', 'gray.800')}
+        bg={'gray.50'}
         _after={{
           content: '""',
           position: 'absolute',
@@ -148,7 +148,7 @@ import {
             fontSize={[24,48]}
             fontFamily={'Work Sans'}
             fontWeight={'bold'}
-            color={useColorModeValue('gray.700', 'gray.50')}>
+            color={'gray.700'}>
             You're in good company
           </chakra.h1>
           <chakra.h2
@@ -156,9 +156,9 @@ import {
             width={'70%'}
             fontFamily={'Inter'}
             fontWeight={'medium'}
-            color={useColorModeValue('gray.500', 'gray.400')}>
+            color={'gray.500'}>
             See why over{' '}
-            <chakra.strong color={useColorModeValue('gray.700', 'gray.50')}>
+            <chakra.strong color={'gray.700'}>
               1,500+
             </chakra.strong>{' '}
             E-Leaders use SyncAppTech to manage their Web Presence and Content!

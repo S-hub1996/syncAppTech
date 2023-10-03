@@ -36,8 +36,8 @@ import {
   
   export default function Plan() {
     return (
-      <Container maxW={'5xl'} py={12}  bg={'gray.50'}>
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+      <Container maxW={'5xl'} my={5} py={12}  bg={'white'}>
+        <SimpleGrid bg={'gray.50'} columns={{ base: 1, md: 2 }} spacing={10}>
           <Stack spacing={4}>
             <Text
               textTransform={'uppercase'}

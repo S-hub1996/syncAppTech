@@ -56,7 +56,7 @@ import {
   
   export default function Support() {
     return (
-      <Box p={4}>
+      <Box p={4} bg={'white'}>
         <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
           <Heading  py={5}
             fontSize={[24,48]}
